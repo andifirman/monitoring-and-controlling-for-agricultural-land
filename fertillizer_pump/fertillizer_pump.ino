@@ -1,11 +1,14 @@
-const int pompa_nitrogen = 22;
+const int nitrogen_pump   = 22;
+const int phosphorus_pump = 21;
+const int kalium_nitrogen = 19;
 
 void setup() {
-  pinMode(pompa_nitrogen, OUTPUT);
+  pinMode(nitrogen_pump, OUTPUT);
   
-  digitalWrite(pompa_nitrogen, LOW);
+  digitalWrite(nitrogen_pump, LOW);
   delay(60000);
-  digitalWrite(pompa_nitrogen, HIGH);
+  digitalWrite(nitrogen_pump, HIGH);
+
 }
 
 void loop() {

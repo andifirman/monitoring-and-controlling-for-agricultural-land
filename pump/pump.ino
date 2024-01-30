@@ -2,13 +2,7 @@
 #include "time.h"
 #include "connection.h"
 
-const int pumpPin = 23;
-
-
-// ----------------------
-long lastTime = 0;
-long minutes = 0;
-// ----------------------
+const int pumpPin                            = 23;
 
 #define ENABLED                                HIGH
 #define DISABLED                               LOW
@@ -109,23 +103,3 @@ void printNtpTime() {
     Serial.println(mySecond);
   }
 }
-
-
-//void turningOnPump() {
-//if (currentTime - previousTime_pump >= timeInterval_pump)
-//  if (millis() - lastTime > 57800) {
-//    digitalWrite(22, LOW);
-//    minutes++;
-//    lastTime = millis();
-//  }
-//
-//  if (minutes > 6) {
-//    digitalWrite(22, HIGH);
-//    minutes = 0;
-//  }
-//  Serial.println(minutes);
-//}
-
-//void turningOffPump() {
-//
-//}
