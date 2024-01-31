@@ -3,10 +3,10 @@ const int phosphorus_pump = 21;
 const int kalium_nitrogen = 19;
 
 void setup() {
-  pinMode(phosphorus_pump, OUTPUT);
-  digitalWrite(phosphorus_pump, LOW);
+  pinMode(kalium_nitrogen, OUTPUT);
+  digitalWrite(kalium_nitrogen, LOW);
   delay(60000);
-  digitalWrite(phosphorus_pump, HIGH);
+  digitalWrite(kalium_nitrogen, HIGH);
   
 }
 
