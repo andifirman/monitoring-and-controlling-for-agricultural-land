@@ -19,7 +19,7 @@ unsigned long timeInterval                   = 1000; // the time we need to wait
 unsigned long previousTime                   = 0; // millis() returns an unsigned long.
 
 // For turning on water pump in 1 minutes
-unsigned long timeInterval_pump              = 10000; // the time we need to wait
+unsigned long timeInterval_pump              = 60000; // the time we need to wait
 unsigned long previousTime_pump              = 0; // millis() returns an unsigned long.
 
 
@@ -47,17 +47,6 @@ void loop() {
 
 
 
-  //  if (myHour == 15 && myMinute == 39 && mySecond == 00) {
-  //    turningOnWaterPump();
-  //  }
-
-  //  INI PAS BUAT TERMINAL YANG 3 COLOKANNYA
-  //  if (myHour == 20 && myMinute == 24 && mySecond == 00) {
-  //    digitalWrite(pumpPin, LOW);
-  //    delay(364000);
-  //  } else {
-  //    digitalWrite(pumpPin, HIGH);
-  //  }
 }
 
 
@@ -69,7 +58,7 @@ void turningOnWaterPump() {
   }
 
 // First watering
-  if (myHour == 19 && myMinute == 53 && mySecond == 00) {
+  if (myHour == 21 && myMinute == 44 && mySecond == 00) {
     if (IS_WATER_GATE_OPEN == DISABLED) {
       digitalWrite(pumpPin, OPEN_WATER_PUMP_GATE);
 
