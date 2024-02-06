@@ -1,4 +1,3 @@
-//#include <SoftwareSerial.h>
 #include <Wire.h>
 
 #define RE 4
@@ -18,7 +17,6 @@ byte values[11];
 void setup() {
   Serial.begin(9600);
   Serial2.begin(4800, SERIAL_8N1, RO, DI);
-  //  Serial2.begin(4800);
 
   // Initiation for NPK sensor
   pinMode(RE, OUTPUT);
@@ -42,20 +40,21 @@ void loop() {
   val3 = potassium();
   delay(250);
 
-  Serial.print("Nitrogen: ");
+  Serial.print("nitrogen: ");
   Serial.print(val1);
-  Serial.println(" mg/kg");
-  Serial.print("Phosphorous: ");
+  Serial.print("ppm");
+  Serial.print('\t');
+  Serial.print("phosphorous: ");
   Serial.print(val2);
-  Serial.println(" mg/kg");
-  Serial.print("Potassium: ");
+  Serial.print("ppm");
+  Serial.print('\t');
+  Serial.print("potassium: ");
   Serial.print(val3);
-  Serial.println(" mg/kg");
+  Serial.print("ppm");
+//  Serial.println();
   delay(3000);
 
 }
-
-
 
 
 byte nitrogen() {

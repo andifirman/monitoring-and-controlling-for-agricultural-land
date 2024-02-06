@@ -6,8 +6,7 @@ void setup() {
 //  pinMode(kalium_nitrogen, OUTPUT);
 //  digitalWrite(kalium_nitrogen, LOW);
 //  delay(60000);
-//  digitalWrite(kalium_nitrogen, HIGH);
-  
+//  digitalWrite(kalium_nitrogen, HIGH); 
 }
 
 void loop() {
