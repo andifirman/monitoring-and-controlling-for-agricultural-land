@@ -1,11 +1,11 @@
-const int kalium_pump   = 19;
+const int phosphorus_pump   = 19;
 
 void setup() {
-  pinMode(kalium_pump, OUTPUT);
+  pinMode(phosphorus_pump, OUTPUT);
   
-  digitalWrite(kalium_pump, LOW);
+  digitalWrite(phosphorus_pump, LOW);
   delay(1452);
-  digitalWrite(kalium_pump, HIGH); 
+  digitalWrite(phosphorus_pump, HIGH); 
 }
 
 void loop() {
